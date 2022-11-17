@@ -54,7 +54,6 @@ let decrement = () => {
 let form = document.querySelector("#menuForm");
 form.addEventListener("submit", e => {
   e.preventDefault();
-  console.log("Hello")
   document.querySelector("#displayBill").style.display = "block";
   let inv = Math.floor(Math.random() * 999);
   document.querySelector(".invoice").innerHTML = `A${inv}`;
